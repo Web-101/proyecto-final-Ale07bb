@@ -28,6 +28,10 @@ body {
   flex-direction: column;
 }
 
+main {
+  flex: 1;
+}
+
 /* HEADER */
 .main-header {
   display: flex;
