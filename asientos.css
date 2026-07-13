@@ -1,0 +1,192 @@
+/* PÁGINA: ASIENTOS */
+.section-asientos {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.resumen-funcion {
+  background-color: var(--bg-tarjeta);
+  border: 1px solid var(--borde-base);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.resumen-funcion h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  margin: 0 0 8px 0;
+}
+
+.resumen-funcion p {
+  color: var(--color-mutado);
+  font-size: 0.9rem;
+  margin: 6px 0;
+}
+
+.resumen-funcion strong {
+  color: var(--color-texto);
+}
+
+.leyenda-asientos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 20px 0;
+  color: var(--color-mutado);
+  font-size: 0.82rem;
+}
+
+.leyenda-asientos span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.muestra {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.muestra.disponible {
+  background-color: #2B2B2B;
+  border: 1px solid #555555;
+}
+
+.muestra.ocupado {
+  background-color: #5A5A5A;
+}
+
+.muestra.seleccionado {
+  background-color: var(--color-marca);
+}
+
+.sala-cine {
+  margin-top: 20px;
+}
+
+.pantalla-cine {
+  border-top: 3px solid #F5F5F5;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 24px;
+}
+
+.grid-asientos {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(30px, 1fr));
+  gap: 8px;
+}
+
+.asiento {
+  min-width: 0;
+  aspect-ratio: 1;
+  border-radius: 7px;
+  border: 1px solid #555555;
+  color: var(--color-texto);
+  background-color: #2B2B2B;
+  font-size: 0.68rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.asiento-disponible:active {
+  transform: scale(0.94);
+}
+
+.asiento-ocupado {
+  background-color: #5A5A5A;
+  color: #BDBDBD;
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.asiento-seleccionado {
+  background-color: var(--color-marca);
+  border-color: var(--color-marca);
+  color: #FFFFFF;
+}
+
+.panel-compra {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--bg-tarjeta);
+  border: 1px solid var(--borde-base);
+  border-radius: 10px 10px 0 0;
+  padding: 16px;
+  margin: 28px -16px 0 -16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.panel-label {
+  color: var(--color-mutado);
+  font-size: 0.75rem;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.panel-valor,
+.panel-total {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+.panel-total {
+  color: var(--color-marca);
+  font-size: 1.25rem;
+}
+
+.btn-continuar {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: var(--color-marca);
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 12px;
+}
+
+.btn-deshabilitado {
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+@media (min-width: 480px) {
+  .leyenda-asientos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-asientos {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-asientos {
+    padding: 32px;
+  }
+
+  .grid-asientos {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .panel-compra {
+    position: static;
+    border-radius: 10px;
+    margin: 32px 0 0 0;
+    grid-template-columns: 1fr 120px 1fr 180px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,130 @@
+/* PÁGINA: COMPRA */
+.section-compra {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.resumen-pedido,
+.form-compra {
+  background-color: var(--bg-tarjeta);
+  border: 1px solid var(--borde-base);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.resumen-pedido h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  margin: 0 0 12px 0;
+}
+
+.resumen-pedido p {
+  color: var(--color-mutado);
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+.resumen-pedido strong {
+  color: var(--color-texto);
+}
+
+.resumen-contenido {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.resumen-poster {
+  width: 88px;
+  aspect-ratio: 2 / 3;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: var(--borde-base);
+}
+
+.resumen-detalle {
+  min-width: 0;
+}
+
+.form-compra {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-compra label {
+  color: var(--color-texto);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.form-compra input {
+  width: 100%;
+  border: 1px solid var(--borde-base);
+  border-radius: 8px;
+  background-color: #101010;
+  color: var(--color-texto);
+  padding: 13px 12px;
+  font: inherit;
+}
+
+.form-compra input:focus {
+  outline: 2px solid var(--color-marca);
+  border-color: var(--color-marca);
+}
+
+.btn-comprar {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: var(--color-marca);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.mensaje-formulario {
+  min-height: 18px;
+  color: var(--color-marca);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.oculto {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .resumen-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .resumen-poster {
+    width: 112px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-compra {
+    padding: 32px;
+  }
+
+  .resumen-contenido {
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+  }
+
+  .resumen-poster {
+    width: 120px;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selecciona tus asientos para la funcion elegida en CINESTAR.">
+  <title>CINESTAR - Asientos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@400;600;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="asientos.css">
+  <script src="js/asientos.js" defer></script>
+</head>
+
+<body>
+  <header class="main-header">
+    <a href="index.html" class="btn-volver" aria-label="Volver a cartelera">←</a>
+    <div class="header-logo" id="logotipo-encabezado">CINESTAR</div>
+    <span class="header-espacio" aria-hidden="true"></span>
+  </header>
+
+  <main>
+    <section class="section-asientos" aria-labelledby="titulo-asientos">
+      <p class="texto-superior">Seleccion de asientos</p>
+      <h1 class="section-title" id="titulo-asientos">Elige tus lugares</h1>
+
+      <article class="resumen-funcion" id="resumen-funcion"></article>
+
+      <div class="leyenda-asientos" aria-label="Estados de los asientos">
+        <span><i class="muestra disponible"></i>Disponible</span>
+        <span><i class="muestra ocupado"></i>Ocupado</span>
+        <span><i class="muestra seleccionado"></i>Seleccionado</span>
+      </div>
+
+      <section class="sala-cine" aria-labelledby="titulo-sala">
+        <h2 class="subtitulo-bloque" id="titulo-sala">Sala 1</h2>
+        <div class="pantalla-cine">PANTALLA</div>
+        <div class="grid-asientos" id="grid-asientos"></div>
+      </section>
+
+      <aside class="panel-compra" aria-label="Resumen de asientos seleccionados">
+        <div>
+          <p class="panel-label">Asientos</p>
+          <p class="panel-valor" id="asientos-seleccionados">Ninguno</p>
+        </div>
+        <div>
+          <p class="panel-label">Cantidad</p>
+          <p class="panel-valor" id="cantidad-asientos">0</p>
+        </div>
+        <div>
+          <p class="panel-label">Total a pagar</p>
+          <p class="panel-total" id="total-pagar">Bs 0</p>
+        </div>
+        <a href="#" class="btn-continuar btn-deshabilitado" id="btn-continuar">Continuar</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-logo" id="logotipo-pie-id">CINESTAR</div>
+    <p class="copyright">&copy; 2026 CINESTAR. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>
