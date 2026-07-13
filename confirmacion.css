@@ -1,0 +1,100 @@
+/* PÁGINA: CONFIRMACIÓN */
+.section-confirmacion {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.mensaje-confirmacion,
+.ticket-virtual {
+  background-color: var(--bg-tarjeta);
+  border: 1px solid var(--borde-base);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.mensaje-confirmacion {
+  border-color: var(--color-marca);
+}
+
+.mensaje-confirmacion h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  margin: 0 0 8px 0;
+}
+
+.mensaje-confirmacion p {
+  color: var(--color-mutado);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ticket-virtual {
+  border-style: dashed;
+  background-color: #101010;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px dashed #777777;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.ticket-header span {
+  color: var(--color-marca);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.ticket-header strong {
+  color: var(--color-texto);
+}
+
+.ticket-virtual p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 10px 0;
+}
+
+.ticket-virtual p span {
+  color: var(--color-mutado);
+}
+
+.ticket-virtual p strong {
+  color: var(--color-texto);
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.btn-volver-cartelera {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: var(--color-marca);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 12px;
+  margin-top: 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .section-confirmacion {
+    padding: 32px;
+  }
+}
