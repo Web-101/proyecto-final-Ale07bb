@@ -55,26 +55,27 @@ main {
   user-select: none;
 }
 
-.btn-buscar {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font-size: 1.25rem;
+.btn-volver,
+.header-espacio {
+  width: 36px;
+  height: 36px;
+}
+
+.btn-volver {
   color: var(--color-texto);
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  border: 1px solid var(--borde-base);
+  border-radius: 50%;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #151515;
 }
 
-.btn-buscar:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
-}
-
-.btn-buscar:active {
-  transform: scale(0.9);
+.btn-volver:visited {
+  color: var(--color-texto);
 }
 
 /* SECCIÓN: CARTELERA */
@@ -113,12 +114,13 @@ main {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  color: inherit;
+  text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
 }
 
 .card-pelicula:hover {
-  transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
@@ -215,13 +217,48 @@ main {
   border-radius: 6px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.btn-funciones:hover,
-.btn-funciones:active {
-  background-color: var(--color-marca);
+.mensaje-cartelera {
+  color: var(--color-mutado);
+  font-size: 0.9rem;
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.mensaje-error {
+  grid-column: 1 / -1;
+  background-color: var(--bg-tarjeta);
+  border: 1px solid var(--borde-base);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.mensaje-error h2 {
+  margin: 0 0 8px 0;
+}
+
+.mensaje-error p {
+  color: var(--color-mutado);
+  margin: 0 0 16px 0;
+}
+
+.btn-primario {
+  display: inline-block;
+  border: 1px solid var(--color-marca);
+  border-radius: 8px;
   color: #FFFFFF;
+  background-color: var(--color-marca);
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.btn-primario:active {
+  transform: scale(0.98);
 }
 
 /* FOOTER */
