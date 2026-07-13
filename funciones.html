@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Funciones disponibles para la pelicula seleccionada en CINESTAR.">
+  <title>CINESTAR - Funciones</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@400;600;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="funciones.css">
+  <script src="js/funciones.js" defer></script>
+</head>
+
+<body>
+  <header class="main-header">
+    <a href="index.html" class="btn-volver" aria-label="Volver a cartelera">←</a>
+    <div class="header-logo" id="logotipo-encabezado">CINESTAR</div>
+    <span class="header-espacio" aria-hidden="true"></span>
+  </header>
+
+  <main>
+    <section class="section-funciones" aria-labelledby="titulo-funciones">
+      <p class="texto-superior">Funciones de hoy</p>
+      <h1 class="section-title" id="titulo-funciones">Selecciona un horario</h1>
+
+      <article class="detalle-pelicula" id="detalle-pelicula"></article>
+
+      <section class="bloque-horarios" aria-labelledby="titulo-horarios">
+        <h2 class="subtitulo-bloque" id="titulo-horarios">Horarios disponibles</h2>
+        <div class="lista-horarios" id="lista-horarios"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-logo" id="logotipo-pie-id">CINESTAR</div>
+    <p class="copyright">&copy; 2026 CINESTAR. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>

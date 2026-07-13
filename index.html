@@ -15,6 +15,7 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <script src="js/cartelera.js" defer></script>
 </head>
 
 <body>
@@ -22,9 +23,6 @@
   <!-- HEADER -->
   <header class="main-header">
     <div class="header-logo" id="logotipo-encabezado">CINESTAR</div>
-    <button class="btn-buscar" id="boton-busqueda" aria-label="Buscar película">
-      🔍
-    </button>
   </header>
 
   <!-- MAIN CONTENT -->
@@ -32,102 +30,8 @@
     <section class="section-cartelera" aria-labelledby="titulo-seccion-cartelera">
       <h1 class="section-title" id="titulo-seccion-cartelera">CARTELERA</h1>
 
-      <!-- CUADRICULA DE PELICULAS -->
-      <div class="grid-peliculas">
-
-        <!-- Scary Movie -->
-        <article class="card-pelicula" id="tarjeta-scary-movie">
-          <div class="card-poster">
-            <img src="imagenes/pelicula1.jpg" alt="Póster de la película Scary Movie" class="poster-imagen"
-              loading="lazy">
-            <div class="badge-restriccion">14+</div>
-          </div>
-          <div class="card-info">
-            <h2 class="card-titulo">Scary Movie</h2>
-            <div class="card-duracion">
-              <span class="punto-separador"></span>1h 28m
-            </div>
-          </div>
-          <a href="funciones.html?id=1" class="btn-funciones" id="enlace-funciones-scary">VER FUNCIONES</a>
-        </article>
-
-        <!-- The Amazing Digital Circus -->
-        <article class="card-pelicula" id="tarjeta-digital-circus">
-          <div class="card-poster">
-            <img src="imagenes/pelicula2.jpg" alt="Póster de la película The Amazing Digital Circus"
-              class="poster-imagen" loading="lazy">
-            <div class="badge-todo-publico">TP</div>
-          </div>
-          <div class="card-info">
-            <h2 class="card-titulo">The Amazing Digital Circus</h2>
-            <div class="card-duracion">
-              <span class="punto-separador"></span>1h 45m
-            </div>
-          </div>
-          <a href="funciones.html?id=2" class="btn-funciones" id="enlace-funciones-circus">VER FUNCIONES</a>
-        </article>
-
-        <!-- El Día de la Revelación -->
-        <article class="card-pelicula" id="tarjeta-dia-revelacion">
-          <div class="card-poster">
-            <img src="imagenes/pelicula3.jpg" alt="Póster de la película El Día de la Revelación" class="poster-imagen"
-              loading="lazy">
-            <div class="badge-restriccion">14+</div>
-          </div>
-          <div class="card-info">
-            <h2 class="card-titulo">El Día de la Revelación</h2>
-            <div class="card-duracion">
-              <span class="punto-separador"></span>2h 10m
-            </div>
-          </div>
-          <a href="funciones.html?id=3" class="btn-funciones" id="enlace-funciones-revelacion">VER FUNCIONES</a>
-        </article>
-
-        <!-- Supergirl -->
-        <article class="card-pelicula" id="tarjeta-supergirl">
-          <div class="card-poster">
-            <img src="imagenes/pelicula4.png" alt="Póster de la película Supergirl" class="poster-imagen"
-              loading="lazy">
-          </div>
-          <div class="card-info">
-            <h2 class="card-titulo">Supergirl</h2>
-            <div class="card-duracion">
-              <span class="punto-separador"></span>2h 15m
-            </div>
-          </div>
-          <a href="funciones.html?id=4" class="btn-funciones" id="enlace-funciones-supergirl">VER FUNCIONES</a>
-        </article>
-
-        <!-- Toy Story 5 -->
-        <article class="card-pelicula" id="tarjeta-toy-story">
-          <div class="card-poster">
-            <img src="imagenes/pelicula5.jpg" alt="Póster de la película Toy Story 5" class="poster-imagen"
-              loading="lazy">
-          </div>
-          <div class="card-info">
-            <h2 class="card-titulo">Toy Story 5</h2>
-            <div class="card-duracion">
-              <span class="punto-separador"></span>1h 55m
-            </div>
-          </div>
-          <a href="funciones.html?id=5" class="btn-funciones" id="enlace-funciones-toy-story">VER FUNCIONES</a>
-        </article>
-
-        <!-- Emily, ¿Dónde Estás? -->
-        <article class="card-pelicula" id="tarjeta-emily">
-          <div class="card-poster">
-            <img src="imagenes/pelicula6.jpg" alt="Póster de la película Emily, ¿Dónde Estás?" class="poster-imagen"
-              loading="lazy">
-          </div>
-          <div class="card-info">
-            <h2 class="card-titulo">Emily, ¿Dónde Estás?</h2>
-            <div class="card-duracion">
-              <span class="punto-separador"></span>1h 40m
-            </div>
-          </div>
-          <a href="funciones.html?id=6" class="btn-funciones" id="enlace-funciones-emily">VER FUNCIONES</a>
-        </article>
-
+      <div class="grid-peliculas" id="contenedor-peliculas">
+        <p class="mensaje-cartelera">Cargando cartelera...</p>
       </div>
     </section>
   </main>

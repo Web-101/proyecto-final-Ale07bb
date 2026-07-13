@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "titulo": "Scary Movie",
+    "poster": "imagenes/pelicula1.jpg",
+    "duracion": "1h 28m",
+    "clasificacion": "14+",
+    "sinopsis": "Una parodia de terror donde un grupo de jovenes vive situaciones absurdas inspiradas en peliculas clasicas del genero.",
+    "funciones": [
+      {
+        "id": 1,
+        "fecha": "2026-07-06",
+        "hora": "16:00",
+        "sala": "Sala 1",
+        "asientosOcupados": ["A1", "A2", "B5", "C3"]
+      },
+      {
+        "id": 2,
+        "fecha": "2026-07-06",
+        "hora": "20:30",
+        "sala": "Sala 2",
+        "asientosOcupados": ["A4", "B1", "B2", "D6"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "The Amazing Digital Circus",
+    "poster": "imagenes/pelicula2.jpg",
+    "duracion": "1h 45m",
+    "clasificacion": "TP",
+    "sinopsis": "Un grupo de personajes queda atrapado en un mundo digital lleno de pruebas, humor y situaciones inesperadas.",
+    "funciones": [
+      {
+        "id": 1,
+        "fecha": "2026-07-06",
+        "hora": "15:30",
+        "sala": "Sala 3",
+        "asientosOcupados": ["A3", "A4", "C1", "C2"]
+      },
+      {
+        "id": 2,
+        "fecha": "2026-07-06",
+        "hora": "18:45",
+        "sala": "Sala 1",
+        "asientosOcupados": ["B3", "B4", "D1", "D2"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "El Dia de la Revelacion",
+    "poster": "imagenes/pelicula3.jpg",
+    "duracion": "2h 10m",
+    "clasificacion": "14+",
+    "sinopsis": "Una historia de suspenso donde una serie de descubrimientos cambia el destino de sus protagonistas.",
+    "funciones": [
+      {
+        "id": 1,
+        "fecha": "2026-07-06",
+        "hora": "17:15",
+        "sala": "Sala 2",
+        "asientosOcupados": ["A5", "A6", "C4", "E1"]
+      },
+      {
+        "id": 2,
+        "fecha": "2026-07-06",
+        "hora": "21:00",
+        "sala": "Sala 3",
+        "asientosOcupados": ["B6", "C6", "D4", "D5"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Supergirl",
+    "poster": "imagenes/pelicula4.png",
+    "duracion": "1h 55m",
+    "clasificacion": "TP",
+    "sinopsis": "Una joven heroina descubre su fuerza interior mientras protege a la ciudad de una nueva amenaza.",
+    "funciones": [
+      {
+        "id": 1,
+        "fecha": "2026-07-06",
+        "hora": "14:00",
+        "sala": "Sala 1",
+        "asientosOcupados": ["A1", "B1", "C1"]
+      },
+      {
+        "id": 2,
+        "fecha": "2026-07-06",
+        "hora": "19:30",
+        "sala": "Sala 2",
+        "asientosOcupados": ["A2", "A3", "D3", "E3"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Toy Story 5",
+    "poster": "imagenes/pelicula5.jpg",
+    "duracion": "1h 40m",
+    "clasificacion": "TP",
+    "sinopsis": "Los juguetes regresan con una nueva aventura sobre amistad, cambios y trabajo en equipo.",
+    "funciones": [
+      {
+        "id": 1,
+        "fecha": "2026-07-06",
+        "hora": "13:30",
+        "sala": "Sala 3",
+        "asientosOcupados": ["A1", "A2", "A3", "B2"]
+      },
+      {
+        "id": 2,
+        "fecha": "2026-07-06",
+        "hora": "16:45",
+        "sala": "Sala 1",
+        "asientosOcupados": ["C3", "C4", "D1", "D2"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "Emily, Donde Estas?",
+    "poster": "imagenes/pelicula6.jpg",
+    "duracion": "1h 50m",
+    "clasificacion": "14+",
+    "sinopsis": "Una busqueda misteriosa revela secretos familiares y pistas ocultas sobre la desaparicion de Emily.",
+    "funciones": [
+      {
+        "id": 1,
+        "fecha": "2026-07-06",
+        "hora": "18:00",
+        "sala": "Sala 2",
+        "asientosOcupados": ["B1", "B2", "B3", "C5"]
+      },
+      {
+        "id": 2,
+        "fecha": "2026-07-06",
+        "hora": "22:00",
+        "sala": "Sala 3",
+        "asientosOcupados": ["A6", "B6", "E5", "E6"]
+      }
+    ]
+  }
+]
